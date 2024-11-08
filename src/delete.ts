@@ -6,7 +6,7 @@ const deleteData = async () => {
   // delete single data
   //   const singleDelete = await prisma.post.delete({
   //     where: {
-  //       id: 1,
+  //       id: 1, // must be unique
   //     },
   //   });
 

@@ -5,27 +5,29 @@ const prisma = new PrismaClient();
 const main = async () => {
   // const createUser = await prisma.user.create({
   //   data: {
-  //     username: "User 1",
+  //     username: "User 2",
   //     email: "user1@example.com",
   //     role: UserRole.user,
   //   },
   // });
+
   // const createProfile = await prisma.profile.create({
   //   data: {
   //     bio: "this is a bio",
   //     userId: 1,
   //   },
   // });
+
   // const createCategory = await prisma.category.create({
   //   data: {
-  //     name: "TypeScript",
+  //     name: "Next.js",
   //   },
   // });
 
   const createPost = await prisma.post.create({
     data: {
-      title: "This is a post 5",
-      content: "This is a content 5",
+      title: "This is a post 10 ",
+      content: "This is a content 10  ",
       authorId: 1,
       postCategory: {
         // create: {

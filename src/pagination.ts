@@ -9,7 +9,7 @@ const pagination = async () => {
   //     take: 2,
   //   });
 
-  // offset pagination
+  // cursor based pagination
   const cursorBasedPagination = await prisma.post.findMany({
     skip: 5,
     take: 5,
